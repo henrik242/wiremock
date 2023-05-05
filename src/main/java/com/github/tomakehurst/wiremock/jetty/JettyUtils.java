@@ -18,10 +18,10 @@ package com.github.tomakehurst.wiremock.jetty;
 import static com.github.tomakehurst.wiremock.common.Exceptions.throwUnchecked;
 import static com.github.tomakehurst.wiremock.jetty11.HttpsProxyDetectingHandler.IS_HTTPS_PROXY_REQUEST_ATTRIBUTE;
 
-import jakarta.servlet.ServletResponse;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpServletResponseWrapper;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletResponseWrapper;
 import java.net.Socket;
 import java.nio.channels.SocketChannel;
 import org.eclipse.jetty.io.ssl.SslConnection;

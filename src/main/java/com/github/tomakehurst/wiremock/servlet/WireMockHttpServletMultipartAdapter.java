@@ -18,7 +18,7 @@ package com.github.tomakehurst.wiremock.servlet;
 import static com.github.tomakehurst.wiremock.common.Exceptions.throwUnchecked;
 
 import com.github.tomakehurst.wiremock.http.*;
-import jakarta.servlet.http.Part;
+import javax.servlet.http.Part;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.List;

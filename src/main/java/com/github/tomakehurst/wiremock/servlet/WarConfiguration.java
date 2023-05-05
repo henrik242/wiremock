@@ -36,7 +36,7 @@ import com.github.tomakehurst.wiremock.standalone.JsonFileMappingsSource;
 import com.github.tomakehurst.wiremock.standalone.MappingsLoader;
 import com.github.tomakehurst.wiremock.store.DefaultStores;
 import com.github.tomakehurst.wiremock.store.Stores;
-import jakarta.servlet.ServletContext;
+import javax.servlet.ServletContext;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
