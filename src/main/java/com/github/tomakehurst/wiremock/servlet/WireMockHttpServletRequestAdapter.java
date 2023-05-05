@@ -30,7 +30,7 @@ import com.github.tomakehurst.wiremock.jetty.JettyUtils;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Maps;
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.*;
@@ -234,9 +234,9 @@ public class WireMockHttpServletRequestAdapter implements Request {
   public Map<String, Cookie> getCookies() {
     ImmutableMultimap.Builder<String, String> builder = ImmutableMultimap.builder();
 
-    jakarta.servlet.http.Cookie[] cookies =
-        getFirstNonNull(request.getCookies(), new jakarta.servlet.http.Cookie[0]);
-    for (jakarta.servlet.http.Cookie cookie : cookies) {
+      javax.servlet.http.Cookie[] cookies =
+        getFirstNonNull(request.getCookies(), new javax.servlet.http.Cookie[0]);
+    for (javax.servlet.http.Cookie cookie : cookies) {
       builder.put(cookie.getName(), cookie.getValue());
     }
 
