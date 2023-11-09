@@ -202,7 +202,7 @@ allprojects {
     mavenCentral()
   }
 
-  version = '3.0.0-beta-8.jetty10'
+  version = '3.0.0-beta-8.finn1'
 
 
   sourceCompatibility = 11
